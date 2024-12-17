@@ -1,0 +1,20 @@
+  .countdown {
+
+    display: flex;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    flex-direction:column ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 400px;
+  }
+  
+
+  .countdown-letra  {
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
