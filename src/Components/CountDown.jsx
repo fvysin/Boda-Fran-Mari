@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
 import './CountDown.css';
-
+import film from '../assets/imagenes/9165800_movie_clapper_film_icon.png'
 export const CountDown = () => {
   const [showCountdown, setShowCountdown] = useState(false);
 
@@ -47,16 +47,39 @@ export const CountDown = () => {
   }, []);
   return (
     <div className="countdown">
-          {showCountdown && (
-          <div className='countdown-letra'>
-            <p>Faltan</p>
-            <p>{countdownTime.days} días</p>
-            <p>{countdownTime.hours} horas</p>
-            <p>{countdownTime.minutes} minutos</p>
+    {showCountdown && (
+      <div className="countdown-letra">
+        {/* Título */}
+        <p className="faltan-cd">Faltan</p>
+
+        {/* Contador en tres columnas */}
+        <div className="countdown-cd">
+          <div className="time-section">
+            <p className="time-value">{countdownTime.days}</p>
+            <p className="time-label">DIAS</p>
           </div>
-        )}
+          <div className="time-section">
+            <p className="time-value">{countdownTime.hours}</p>
+            <p className="time-label">HS</p>
+          </div>
+          <div className="time-section">
+            <p className="time-value">{countdownTime.minutes}</p>
+            <p className="time-label">MIN</p>
+          </div>
         </div>
-      
-  
-  );
+          <div>
+           <img className="icono-film" src={film} alt=""  />
+          </div>
+
+        {/* <lord-icon
+    src="https://cdn.lordicon.com/gpabwdkx.json"
+    trigger="loop"
+    colors="primary:#000000,secondary:#9fddea"
+    style={{ width: '55px', height: '55px' }}
+      >
+      </lord-icon> */}
+      </div>
+    )}
+  </div>
+);
 };

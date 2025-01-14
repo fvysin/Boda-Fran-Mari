@@ -1,11 +1,13 @@
 import './App.css'
 import { Portada } from './Components/Portada.jsx'
 import {Info} from './Components/Info.jsx' 
-import {Instagram} from './Components/Instagram.jsx'
+import{Traslados} from './Components/Traslados.jsx'
 import {Regalos} from './Components/Regalos.jsx'
-import{FormMusica} from './Components/FormMusica.jsx'
 import {CountDown} from './Components/CountDown.jsx'
 import {Carrusel} from './Components/Carrusel.jsx'
+import {Final} from './Components/Final.jsx'
+import { Tips } from './Components/Tips.jsx'
+import { CeremoniaCelebracion } from './Components/CeremoniaCelebracion.jsx'
 
 export const App= () => {
   return (
@@ -13,10 +15,12 @@ export const App= () => {
       <Portada/>
       <CountDown/>
       <Info/>
+      <CeremoniaCelebracion/>
+      <Traslados/>
       <Carrusel/>
-      <Instagram/>
-      <FormMusica/>
+      <Tips/>
       <Regalos />
+      <Final/>
     </div>
   )
 }

@@ -1,0 +1,51 @@
+.container-ceremonia{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arima', sans-serif;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    margin-top: 2.5rem;
+  }
+  .titulo{
+    animation: slideIn 3s ease-out forwards;
+    }
+    
+    @keyframes slideIn {
+          0% {
+              transform: translateY(-100%); 
+              opacity: 0;  
+          }
+          100% {
+              transform: translateY(0);  
+              opacity: 1;  
+          }
+      }
+  
+  .todo-ceremonia{
+    padding: 20px;
+    background-image: url('../assets/imagenes/4.png');
+    background-size: cover;
+
+  }
+  .map-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  iframe {
+    border: 0;
+    border-radius: 5px;
+  }
+  
+
+.direccion-ceremonia{
+      margin-top: 1rem;
+      font-size: 1.3rem;
+
+  }
+  .texto-direccion-ceremonia{
+    
+  }

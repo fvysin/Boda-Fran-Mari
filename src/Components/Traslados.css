@@ -1,0 +1,17 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ }
+ 
+.container-traslados{
+     width: 100%;
+     height: auto;
+     display: flex;
+     flex-direction: column;
+     font-family: 'Arima';
+     text-align: center;
+     padding: 20px;
+ 
+    }
+ 

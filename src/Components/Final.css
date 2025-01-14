@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Arima';
+    src: url('../assets/fonts/Arima/ArimaKoshi-Regular.otf');
+  }
+
+.titulo{
+    animation: slideIn 3s ease-out forwards;
+    }
+    
+    @keyframes slideIn {
+          0% {
+              transform: translateY(-100%); 
+              opacity: 0;  
+          }
+          100% {
+              transform: translateY(0);  
+              opacity: 1;  
+          }
+      }
+.texto-final{
+    margin: 0 1rem ;
+    font-family: 'Geist';
+    line-height: 1.7;
+    font-size: 1rem;
+    
+}
+.container-info{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arima';
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+}
+
+.parrafo-final{
+    margin-bottom: 2.5rem;
+    margin-top: 1rem;
+    font-family: 'Arima';
+    font-size: 1rem;
+
+    }
+
+
+.novios-final{
+     font-family: 'Starla'
+
+}
+.nopodemos{
+    background-color: rgb(235, 243, 250);
+    width: 100%;
+    padding: 30px 10px;
+    font-family: 'Arima';
+    text-transform: uppercase;
+    animation: zoomIn 3s ease-out forwards; 
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);  /* Comienza desde un tamaño pequeño */
+    opacity: 0;  /* Empieza invisible */
+}
+100% {
+    transform: scale(1);  /* Llega a su tamaño original */
+    opacity: 1;  /* Se vuelve completamente visible */
+}
+
+}
+
+.btn-final{
+   margin-top: 0.3rem;
+   margin-bottom: 1rem;
+   transition: 0.5s ease;
+   border-color: #d4af37;
+   background-color: #d4af3754;
+   
+   border-radius: 40px;
+   text-decoration: none;
+   font-size: 0.8rem;
+   color:black;
+   display: inline-block;
+   width: 6.5rem;
+   height: 2rem;
+   text-align: center; 
+   line-height: 1.9rem;
+   
+}
+
+
+.btn-final:hover {
+    background:rgb(240, 240, 240);
+    box-shadow: 0 0 1rem var;
+    color: rgb(0, 0, 0);
+
+}
+.nopodemos-container {
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    margin: 0; /* Elimina márgenes */
+    padding: 0; /* Elimina paddings */
+}
+.mari-fran{
+    font-family: 'Starla';
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+}
+
+.span-and{
+    font-family: 'Geist';
+    font-size: 1.3rem;
+    background: linear-gradient(45deg, #d4af37, #ffd700, #b8860b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s linear infinite;
+}
