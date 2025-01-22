@@ -5,6 +5,12 @@
   font-family: 'Starla';
   src: url('../assets/fonts/starla/Starla.ttf');
 }
+@font-face {
+  font-family: 'Voga';
+  src: url('../assets/fonts/Voga/voga_medium.otf');
+}
+
+
 
 *{
     padding: 0;
@@ -14,66 +20,81 @@
    
 .portada-container {
     width: 100%;
-    height: auto;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     font-family: 'Geist';
     overflow: hidden;
-    border-color: #000000;
       }
-.portada-fondo {
-  background-image: url('../assets/anillo-fran-mari.jpeg');
-  width: 100%;
-  height: 70vh; 
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: center top;
-      }
+ .portada-fondo-img {
+    width: 100%;
+    height: auto; 
+    object-fit: contain;
+    display: block;
+    }
 
 .portada-contenido {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content:first baseline;
-  margin-top: 1.5rem;
-  height: 100%; 
-  height: 30vh;
-  color: rgb(0, 0, 0); 
-  text-align: center;
+  align-items:flex-start;
+  justify-content: center;
+  width: 100%; 
+  position: relative;
+}
+
+.portada-img {
+  width: 100%;
+  height: auto; 
+  object-fit: contain; 
+  display: block;
 }
 
 
 .portada-texto{
-  font-weight: 400;
-    font-size: 1.5rem;
+    font-family: 'Voga'; 
+    font-size: 2rem;
+    position: absolute; 
+    top: 45%;
+    left: 40%; 
+    transform: translate(-50%, -50%);
     text-align: center;
-}
-/* .portada-texto span{
-    background-color: #000000;
-    color:rgb(255, 255, 255);
-    border-radius:50%;
-    display: inline-block; 
-    width: 1.5rem;
-    height: 1.5rem; 
-    font-size: 1.5rem;
-    text-align: center;
-    line-height: 1.5rem;
-} */
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-100%); 
+      opacity: 0;  
+    }
+    100% {
+      transform: translateY(0);  
+      opacity: 1;  
+    }
+  }
 
 
 .portada-fecha {
   display: flex;
   font-size: 1.3rem;
-  font-weight: 200;
+  font-weight: 500;
   align-items: center;
+  position: absolute;
+  top: 65%; 
+  left:5%;
+
 }
 .portada-fecha::before,
 .portada-fecha::after 
 {
     content: '';
-    width: 5rem; /* alargar linea */
+    width: 3rem; 
     display: inline-block;
     height: 2px;
     border-top: 0.5px solid rgb(0, 0, 0);

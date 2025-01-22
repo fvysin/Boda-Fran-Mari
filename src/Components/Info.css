@@ -1,45 +1,65 @@
+
+@font-face {
+  font-family: 'Cinzel';
+  src: url('../assets/fonts/cinzel/Cinzel-Regular.otf');
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
    }
-   /* rgba(210,218,209,255) */
-   /* #d2dad1 */
+   /* #23263b azul fondo */
+   /* #f4eddc  beige de info protagonistas */
+   /* #faf8f7   color beige*/
+   /* #cbb69c marroncito letra */
+   /* rgba(210,218,209,255) verde verdoso */
+   /* rgb(235, 243, 250) */
 .container-info{
        width: 100%;
        height: auto;
        display: flex;
        flex-direction: column;
-       font-family: 'Arima';
-       overflow: hidden;
+       font-family: 'Arima', sans-serif;
+       font-weight: 100;
+       overflow: visible;
        text-align: center;
-   }
-   
-.texto{
-       padding: 20px;
-   }
-   
-.linea-sola{
-     content: '';
-     width: 17rem;
-     border-top: 0.5px solid rgb(0, 0, 0), #9fddea;
-    margin: 0 auto
-   
-   }
 
-span{
-    font-weight: bold;
-}
-.titulo{
-        font-family: 'Starla'; 
-        font-size: 1.6rem;
-        text-align: center;
-        background: linear-gradient(45deg, #d4af37, #ffd700, #b8860b);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: shine 3s linear infinite, slideIn 15s ease-out forwards;
+   }
+   
+
+   .texto{
+     margin-top: 2.5rem;
+
     }
+    .titulo{
+      font-family: 'Cinema';
+      letter-spacing: 1.5px;
+      font-size: 3.2rem;
+      text-align: center;
+      overflow: hidden; 
+      white-space: nowrap; 
+      width: 0;
+      font-weight: 100;
+      border-right: 2px solid;
+      animation: typing 4s steps(30) infinite, blink 0.75s step-end infinite; 
+      display: inline-block;
+
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent; /* Hace parpadear el cursor */
+  }
+}
     
     @keyframes shine {
       0% {
@@ -48,62 +68,54 @@ span{
       100% {
         background-position: 100%;
       }
-         }
-      @keyframes slideIn {
-          0% {
-              transform: translateY(-100%); 
-              opacity: 0;  
-          }
-          100% {
-              transform: translateY(0);  
-              opacity: 1;  
-          }
+    }
+    @keyframes slideIn {
+      0% {
+        transform: translateY(-100%); 
+        opacity: 0;  
       }
-.texto-info{
-   margin: 0 1rem ;
-   line-height: 1.7;
-   font-size: 1rem;
+      100% {
+        transform: translateY(0);  
+        opacity: 1;  
+      }
+    }
+    .texto-info{
+      margin: 0 1rem ;
+      line-height: 1.5;
+      font-weight: 300;
+      font-size: 1.1rem;
+      padding: 10px;
+      
+    }
+  
+.parrafo{
+      margin-bottom: 1rem;
+      
+    }
+span{
+    font-weight: bold;
+    color: #efb810;
+    font-size: 1.5rem;
+    font-family:'Cinema';
+      }
 
-}
-.queridos-info{
-    margin-top: 2rem;
-    
-  }
-  .parrafo{
-    margin-bottom: 1rem;
- 
-  }
-.img-container-info{
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-.save-date{
-  margin: 0 1.5rem 0 1.2rem; 
-    text-align: left;  
-    font-family: 'Arima';
-
-    
-}
-.img-nieve{
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    padding:0;
-}
 
 .texto-info-ceremonia{
-    margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    border: 2px solid;
-    border-color: #d4af37;
-    border-radius: 40px;
-   margin: 2rem;
-   padding: 20px;
-   opacity: 0;  /* Comienza invisible */
-   transform: scale(0);  /* Comienza pequeño para el efecto de zoom */
-   animation: zoomIn 4s ease-out forwards; 
+    padding: 20px;
+    background-size: cover;
+    transform: scale(1); 
+    background-image: url('../assets/imagenes/55.png'); 
+    }
+.img-info{
+  animation: zoomIn 3s ease-out forwards; 
+  background-image: url('../assets/imagenes/moviefondo.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 550px;
+  width: 100%;
 }
 
 @keyframes zoomIn {
@@ -116,21 +128,29 @@ span{
     opacity: 1;  /* Se vuelve completamente visible */
 }
 }
+.container-datos{
+  margin-top: 5rem;
+}
 .h3-info{
-    margin: 1rem 0;
-    font-size: 1.2rem;
-    font-family: 'Arima';
+    font-size: 1.3rem;
+    font-family: 'Arima', sans-serif;
+    align-items: center;
+    justify-content: center;
 
 }
 .h3-info p{
-    font-family: 'Starla'; 
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-    background: linear-gradient(45deg, #d4af37, #ffd700, #b8860b);
+    font-family: 'Cinema'; 
+    font-size: 2.3rem;
+    letter-spacing: 0.8px;
+    margin-top:0.7rem;
+    margin-bottom: 1.3rem;
+    color: #efb810;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.8)
+    /* background: linear-gradient(45deg, #d4af37, #ffd700, #b8860b);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: shine 3s linear infinite;
+    animation: shine 3s linear infinite; */
 }
 
 @keyframes shine {
@@ -143,11 +163,10 @@ span{
 }
 
 .h3-footer{
-   margin:0 2rem;                
-    font-weight: bold;
     font-size: 1rem;
-     
-    }
+    font-family: 'Arima', sans-serif;
+    margin-top: -1rem;
+     }
     
 
  

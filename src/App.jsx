@@ -13,8 +13,8 @@ export const App= () => {
   return (
     <div className='app'>
       <Portada/>
-      <CountDown/>
       <Info/>
+      <CountDown/>
       <CeremoniaCelebracion/>
       <Traslados/>
       <Carrusel/>

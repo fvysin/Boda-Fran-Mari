@@ -1,17 +1,53 @@
+@font-face {
+  font-family: 'Hollywood';
+  src: url('../assets/fonts/hollywood_hills/HollywoodHills.ttf');
+}
+@font-face {
+  font-family: 'Cowboy';
+  src: url('../assets/fonts/CowboyMovie.ttf');
+}
 .container-ceremonia{
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     font-family: 'Arima', sans-serif;
+    font-weight: 100;    
     overflow: hidden;
     text-align: center;
     padding: 20px;
-    margin-top: 2.5rem;
+    background-color:#f5f5f5;
+
   }
-  .titulo{
-    animation: slideIn 3s ease-out forwards;
-    }
+  .titulo1{
+    font-family: 'Cinema';
+    letter-spacing: 1px;
+    font-size: 2.8rem;
+    text-align: center;
+    font-weight: 100;
+     margin-top: 1.5rem;
+     display: inline-block;
+    overflow: hidden; 
+      white-space: nowrap; 
+      border-right: 2px solid;
+      animation: typing 4s steps(30) infinite, blink 0.75s step-end infinite; /* Animaciones */
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent; /* Hace parpadear el cursor */
+  }
+
+  }
     
     @keyframes slideIn {
           0% {
@@ -23,13 +59,16 @@
               opacity: 1;  
           }
       }
-  
-  .todo-ceremonia{
+  .ceremonia-texto{
     padding: 20px;
-    background-image: url('../assets/imagenes/4.png');
-    background-size: cover;
 
   }
+  .todo-ceremonia{
+    background-color: rgba(255, 255, 255, 0.925);    background-size: cover;
+    border-radius: 20px 20px 0 0;
+    padding-bottom: 30px;
+  }
+
   .map-container {
     display: flex;
     justify-content: center;
@@ -43,9 +82,9 @@
 
 .direccion-ceremonia{
       margin-top: 1rem;
-      font-size: 1.3rem;
-
+      font-size: 1rem;
+      font-weight: 500;
   }
-  .texto-direccion-ceremonia{
-    
-  }
+.mapa-traslados{
+  margin-top: 1rem;
+}

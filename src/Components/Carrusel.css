@@ -8,55 +8,96 @@
 }
 
 .tira-fotografica {
-  min-height: 100vh;
   display: flex;
+    width: 100%;
+  height: 500px;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-}
-
-.h2 {
-  font-family: 'Starla'; 
-  font-size: 1.3rem;
-  color: #000000;
+  overflow: hidden;
   text-align: center;
-}
-
-.camara{
-  align-items: center;
-  justify-content: center;
-
-
+  background-image: url('../assets/imagenes/night.jpg');
+  background-size: cover;
 }
 
 .container-carousel {
-  width: 500px;
-  height: 300px;
-  overflow: hidden;
-}
-.carruseles{
-  width: 300%;
+  width: 90%;
   height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+}
+
+.carruseles {
   display: flex;
+  width: 100%; 
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(calc(-100% * var(--current-slide, 0)));
+  margin-top: 0;
+}
+.tituloca{
+  font-family: 'Cinema';
+  letter-spacing: 1.5px;
+  font-size: 3.2rem;
+  text-align: center;
+  overflow: hidden; 
+  white-space: nowrap; 
+  width: 0;
+  font-weight: 100;
+  border-right: 2px solid;
+  animation: typing 4s steps(30) infinite, blink 0.75s step-end infinite; 
+  display: inline-block;
+  margin-top: 2rem;
+  justify-content: center;
 }
 
-.slider-section{
-  width: calc(100% /3);
+@keyframes typing {
+0% {
+width: 0;
+}
+100% {
+width: 100%;
+}
+}
+
+@keyframes blink {
+50% {
+border-color: transparent; /* Hace parpadear el cursor */
+}
+}
+
+.slider-section {
+  width: 100%; 
+  flex-shrink: 0;
   height: 100%;
 }
-.slider-section img{
-  width: 500px;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 15px;
 
+.slider-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.slider-section:not(.active) {
+  display: none; 
 }
 
 
 
+@keyframes typing {
+0% {
+width: 0;
+}
+100% {
+width: 100%;
+}
+}
 
-
-
+@keyframes blink {
+50% {
+border-color: transparent; /* Hace parpadear el cursor */
+}
+}
 @font-face {
   font-family: Cinema;
   src: url('../assets/fonts/clouts/Clouts!.ttf');

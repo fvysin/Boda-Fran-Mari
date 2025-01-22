@@ -1,11 +1,15 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './CountDown.css';
+import imagen from '../assets/imagenes/marifrancolor.png'
+
 import film from '../assets/imagenes/9165800_movie_clapper_film_icon.png'
+import { useOnScreen } from '../Components/useOnScreen';
+
 export const CountDown = () => {
   const [showCountdown, setShowCountdown] = useState(false);
-
-  // Función para actualizar el contador de cuenta atrás
+  const ref = useRef();
+  const isVisible = useOnScreen(ref);
   const getCountdownTime = () => {
     const targetDate = new Date('2025-05-10T14:00:00'); // Fecha de la boda
     const now = new Date();
@@ -46,13 +50,19 @@ export const CountDown = () => {
     };
   }, []);
   return (
-    <div className="countdown">
+    <div className={`countdown ${isVisible ? 'show' : ''}`} ref={ref}>
     {showCountdown && (
+      
       <div className="countdown-letra">
-        {/* Título */}
-        <p className="faltan-cd">Faltan</p>
+         <div className='img-container-info'>
+         <div className="content-wrapper">
+          <img className="img-nieve" src={imagen} alt="imagen-nieve" />
 
-        {/* Contador en tres columnas */}
+        {/* Título */}
+        <div className='container-faltan'>
+
+        <p className="titulo">Faltan</p>
+
         <div className="countdown-cd">
           <div className="time-section">
             <p className="time-value">{countdownTime.days}</p>
@@ -66,18 +76,17 @@ export const CountDown = () => {
             <p className="time-value">{countdownTime.minutes}</p>
             <p className="time-label">MIN</p>
           </div>
+          <div className="time-section">
+            <p className="time-value">{countdownTime.seconds}</p>
+            <p className="time-label">SEC</p>
+          </div>
         </div>
           <div>
            <img className="icono-film" src={film} alt=""  />
           </div>
-
-        {/* <lord-icon
-    src="https://cdn.lordicon.com/gpabwdkx.json"
-    trigger="loop"
-    colors="primary:#000000,secondary:#9fddea"
-    style={{ width: '55px', height: '55px' }}
-      >
-      </lord-icon> */}
+        </div>
+      </div>
+      </div>
       </div>
     )}
   </div>
