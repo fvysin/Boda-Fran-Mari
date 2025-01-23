@@ -1,9 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect, useRef } from 'react';
 import './CountDown.css';
-import imagen from '../assets/imagenes/marifrancolor.png'
-
-import film from '../assets/imagenes/9165800_movie_clapper_film_icon.png'
+import imagen from '../assets/imagenes/fotonieve.jpg'
 import { useOnScreen } from '../Components/useOnScreen';
 
 export const CountDown = () => {
@@ -49,24 +47,23 @@ export const CountDown = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  return (
+
+
+return (
     <div className={`countdown ${isVisible ? 'show' : ''}`} ref={ref}>
-    {showCountdown && (
-      
+        {showCountdown && (
+    <div className="countdown-card">
+        <div className="img-container-info">
+           <img className="img-nieve" src={imagen} alt="imagen-boda" />
+        </div>
+
+      {/* Contenido */}
       <div className="countdown-letra">
-         <div className='img-container-info'>
-         <div className="content-wrapper">
-          <img className="img-nieve" src={imagen} alt="imagen-nieve" />
-
-        {/* Título */}
-        <div className='container-faltan'>
-
-        <p className="titulo">Faltan</p>
-
+        <h2 className="titulo">Faltan</h2>
         <div className="countdown-cd">
           <div className="time-section">
             <p className="time-value">{countdownTime.days}</p>
-            <p className="time-label">DIAS</p>
+            <p className="time-label">DÍAS</p>
           </div>
           <div className="time-section">
             <p className="time-value">{countdownTime.hours}</p>
@@ -81,14 +78,10 @@ export const CountDown = () => {
             <p className="time-label">SEC</p>
           </div>
         </div>
-          <div>
-           <img className="icono-film" src={film} alt=""  />
-          </div>
-        </div>
       </div>
-      </div>
-      </div>
-    )}
-  </div>
-);
-};
+    </div>
+     )}
+ </div>
+     );
+     };
+     

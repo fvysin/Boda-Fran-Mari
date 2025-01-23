@@ -12,8 +12,6 @@ export const Portada = () => {
 <div className={`portada-container${isVisible ? 'show' : ''}`} ref={ref}>
     <div className='portada-contenido'>
       {/* <img src={ticket} alt="Contenido" className="portada-img"/> */}
-        <h2 className="portada-texto">Bienvenidos a la invitación</h2>
-        <h3 className="portada-fecha">10.05.2025</h3>
       </div>
     <img src={vida} alt="Fondo" className="portada-fondo-img"/>
   

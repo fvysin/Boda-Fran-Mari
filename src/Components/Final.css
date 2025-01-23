@@ -5,22 +5,6 @@
 }
 
 
-
-
-    @keyframes slideIn {
-          0% {
-              transform: translateY(-100%); 
-              opacity: 0;  
-          }
-          100% {
-              transform: translateY(0);  
-              opacity: 1;  
-          }
-      }
-.texto-final{
-   
-    
-}
 .container-final{
     width: 100%;
     height: auto;
@@ -32,8 +16,23 @@
     padding: 20px;
     align-items: center;
     font-weight: 100;
-
+    transition: none;
+    background-color:#f5f5f5;
 }
+
+.fondofinal{
+    background-color: rgba(255, 255, 255, 0.925);    
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: none; 
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+
+  }
+
 
 .parrafo-final{
     margin-bottom: 2.5rem;
@@ -80,7 +79,8 @@
     text-decoration: none;
     padding: 0.8rem 1.5rem;
     border-radius: 30px;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    letter-spacing: 1.8px;
     font-weight: bold;
     transition: background-color 0.3s ease;
   }

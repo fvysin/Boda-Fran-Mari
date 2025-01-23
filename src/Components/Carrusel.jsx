@@ -1,9 +1,11 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect, useRef } from 'react';
 import { useOnScreen } from '../Components/useOnScreen';
-import imagen1 from '../assets/imagenes/330.png';
-import imagen2 from '../assets/imagenes/440.png';
-import imagen3 from '../assets/imagenes/550.png';
+import imagen1 from '../assets/imagenes/carruselpareja.png';
+import imagen2 from '../assets/imagenes/carruselstar.png';
+import imagen3 from '../assets/imagenes/carruselvida.png';
 import './Carrusel.css';
+import { Regalos } from './Regalos';
 
 export const Carrusel = () => {
   const ref = useRef();
@@ -35,6 +37,7 @@ export const Carrusel = () => {
           ))}
         </div>
       </div>
+      <Regalos/>
     </div>
   );
 };

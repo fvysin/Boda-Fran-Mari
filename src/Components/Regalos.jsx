@@ -11,18 +11,8 @@ export const Regalos = () => {
   const closeModal = () => setIsModalOpen(false);
   return (
     <div className={`container-regalos ${isVisible ? 'show' : ''}`} ref={ref}>
-       <h1 className='titulo'>Regalos</h1>
-       <lord-icon
-        className='camara'
-        src="https://cdn.lordicon.com/kezeezyg.json"
-        trigger="loop"
-        colors="primary:#000000,secondary:#9fddea"
-        style={{ width: '50px', height: '50px' }}
-      ></lord-icon>
-
+       <h1 className='tituloregalos'>Regalos</h1>
       <div className='texto-regalos-container'>
-
-
 
         {/* Modal */}
         {isModalOpen && (
@@ -42,8 +32,8 @@ export const Regalos = () => {
         )}
       <p className='texto-regalos'>Si deseas hacernos un regalo para esta nueva película que estamos por comenzar, te dejamos nuestro IBAN para que puedas contribuir con lo que desees:
       </p>
-      <button className="btn-mapa" onClick={openModal}>
-          Ver datos
+      <button className="btn-mapa1" onClick={openModal}>
+          VER DATOS
         </button>
            </div>
     </div>

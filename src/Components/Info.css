@@ -27,11 +27,7 @@
    }
    
 
-   .texto{
-     margin-top: 2.5rem;
-
-    }
-    .titulo{
+   .titulo{
       font-family: 'Cinema';
       letter-spacing: 1.5px;
       font-size: 3.2rem;
@@ -69,16 +65,7 @@
         background-position: 100%;
       }
     }
-    @keyframes slideIn {
-      0% {
-        transform: translateY(-100%); 
-        opacity: 0;  
-      }
-      100% {
-        transform: translateY(0);  
-        opacity: 1;  
-      }
-    }
+
     .texto-info{
       margin: 0 1rem ;
       line-height: 1.5;
@@ -105,17 +92,20 @@ span{
     flex-direction: column;
     padding: 20px;
     background-size: cover;
-    transform: scale(1); 
     background-image: url('../assets/imagenes/55.png'); 
-    }
+     
+  }
 .img-info{
-  animation: zoomIn 3s ease-out forwards; 
-  background-image: url('../assets/imagenes/moviefondo.jpg');
+  transform: none;
+  background-image: url('../assets/imagenes/fondocartel.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   height: 550px;
   width: 100%;
+}
+.img-info.zoomIn{
+  animation: zoomIn 5s ease-out forwards;
 }
 
 @keyframes zoomIn {

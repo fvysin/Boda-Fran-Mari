@@ -3,12 +3,13 @@ import './Info.css'
 import iconoPareja from '../assets/imagenes/couple.png'
 import iconoFecha from '../assets/imagenes/clock.png'
 import iconoLugar from '../assets/imagenes/home.png'
+// eslint-disable-next-line no-unused-vars
 import React, { useRef } from 'react';
 import { useOnScreen } from '../Components/useOnScreen'; // Ruta del hook
 
 export const Info = () => {
-  const ref = useRef();
-  const isVisible = useOnScreen(ref);
+    const ref = useRef();
+    const isVisible = useOnScreen(ref);
   return (
     <div className={`container-info ${isVisible ? 'show' : ''}`} ref={ref}>
       <div className='texto'>
@@ -22,7 +23,7 @@ export const Info = () => {
         </div>
           
         <div className='texto-info-ceremonia'>
-          <div className='img-info'>
+          <div className={`img-info ${isVisible ? 'zoomIn' : ''}`}>
           <div className='container-datos'>
        <div className='h3-info'>
         <img className="icono-info" src={iconoPareja} alt="" /> Los protagonistas: 

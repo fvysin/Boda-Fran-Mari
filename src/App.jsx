@@ -16,10 +16,10 @@ export const App= () => {
       <Info/>
       <CountDown/>
       <CeremoniaCelebracion/>
-      <Traslados/>
       <Carrusel/>
+      <Traslados/>
+      {/* <Regalos /> */}
       <Tips/>
-      <Regalos />
       <Final/>
     </div>
   )

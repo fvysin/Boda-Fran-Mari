@@ -8,7 +8,8 @@ export const Traslados = () => {
   const isVisible = useOnScreen(ref);
   return (
     <div className={`container-traslados ${isVisible ? 'show' : ''}`} ref={ref}>
-       <p className='titulo'>Traslados</p>
+      <div className={`fondotraslados ${isVisible ? 'animate' : ''}`}>
+       <p className='titulo1'>Traslados</p>
         <div className='div-traslados'>
           <p className='lugar-hora-traslados'>Buses para traslados de invitados, protagonistas y staff</p>
 
@@ -30,8 +31,8 @@ export const Traslados = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="btn-mapa"
-          >
-            Ver dirección
+            >
+            VER DIRECCIÓN
           </a>
         </div>
 
@@ -39,6 +40,7 @@ export const Traslados = () => {
       </div>
       <p className='por-favor'>
       Por favor, confirmar asistencia de los buses antes del 1 de abril a Mari </p>
+            </div> 
         </div>
       </div>
   )
