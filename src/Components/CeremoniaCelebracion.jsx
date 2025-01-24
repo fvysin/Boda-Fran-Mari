@@ -23,7 +23,7 @@ export const CeremoniaCelebracion = () => {
 
         <div className="button-container">
         <a
-          href="https://www.google.com/maps/place/Hotel+Rural+S'Olivaret/@39.734397,2.800670,17z/"
+          href="https://maps.app.goo.gl/Azpw3roEZWznWh9Z6"
           target="_blank"
           rel="noopener noreferrer"
           className="btn-mapa"

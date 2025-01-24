@@ -27,7 +27,7 @@ export const Traslados = () => {
       <div className="map-container">
           <div className="button-container">
           <a
-            href="https://www.google.com/maps/place/Colegio+San+Cayetano/@39.57537,2.621702,17z/"
+            href="https://maps.app.goo.gl/ySuz1ziktbJHv4P17"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-mapa"
