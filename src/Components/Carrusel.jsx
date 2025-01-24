@@ -32,8 +32,8 @@ export const Carrusel = () => {
             }`}
             >
               <img src={image} alt={`Slide ${index + 1}`} />
-              <p className="tituloca">Llega</p>
-              <p className="tituloca2">Una boda que recordarás <br /> toda tu vida</p>
+              <p className="tituloca">Llega...</p>
+              <p><span>¡Una boda que recordaras toda tu vida!</span></p>
             </div>
           ))}
         </div>

@@ -30,7 +30,9 @@
     padding: 10px;
     text-align: center;
     justify-content: center;
-
+  }
+  .fondofinal.animate {
+    animation: slideIn 1.5s ease-in-out;
   }
 
 

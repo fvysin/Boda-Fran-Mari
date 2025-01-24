@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { useOnScreen } from '../Components/useOnScreen';
 import './Tips.css'
-import dresscode from '../assets/imagenes/dresscode.jpg'
+import dresscode from '../assets/imagenes/Dresscode02.jpg'
 
 export const Tips = () => {
   const ref = useRef();

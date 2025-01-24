@@ -11,12 +11,12 @@
   display: flex;
   flex-direction: column; /* Asegura que Regalos se alinee verticalmente */
   width: 100%;
-  min-height: 100vh; /* Asegura que el fondo cubra la pantalla completa */
+  height: 100%;
   align-items: center;
   justify-content: flex-start; /* Para alinear el contenido al inicio */
   overflow: hidden;
   text-align: center;
-  background-image: url('../assets/imagenes/fondocarrusel.png');
+  background-image: url('../assets/imagenes/portadatelon02.jpg');
   background-size: cover;
   background-position:center;
 
@@ -24,7 +24,6 @@
 
 .container-carousel {
   width: 85%;
-  max-width: 1200px;
   height: 100%;
   margin-bottom: 1rem;
 }
@@ -48,7 +47,7 @@
   color: white;
   font-weight: 100;
   display: inline-block;
-  margin-top: 2rem;
+  margin-top: 1rem;
   justify-content: center;
   color: white;
 
