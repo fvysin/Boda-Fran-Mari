@@ -17,8 +17,8 @@ export const App= () => {
       <CountDown/>
       <CeremoniaCelebracion/>
       <Carrusel/>
+      <Regalos />
       <Traslados/>
-      {/* <Regalos /> */}
       <Tips/>
       <Final/>
     </div>

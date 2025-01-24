@@ -9,7 +9,7 @@ export const Traslados = () => {
   return (
     <div className={`container-traslados ${isVisible ? 'show' : ''}`} ref={ref}>
       <div className={`fondotraslados ${isVisible ? 'animate' : ''}`}>
-       <p className='titulo1'>Traslados</p>
+       <p className='titulotraslados'>Traslados</p>
         <div className='div-traslados'>
           <p className='lugar-hora-traslados'>Buses para traslados de invitados, protagonistas y staff</p>
 
@@ -32,7 +32,7 @@ export const Traslados = () => {
             rel="noopener noreferrer"
             className="btn-mapa"
             >
-            VER DIRECCIÓN
+            VER DIRECCION
           </a>
         </div>
 

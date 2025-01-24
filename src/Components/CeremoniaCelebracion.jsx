@@ -28,7 +28,7 @@ export const CeremoniaCelebracion = () => {
           rel="noopener noreferrer"
           className="btn-mapa"
         >
-          VER DIRECCIÓN
+          VER DIRECCION
         </a>
       </div>
       </div>

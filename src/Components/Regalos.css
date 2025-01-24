@@ -34,20 +34,16 @@
   }
   
 .tituloregalos{
-        font-family: 'Cinema';
-        letter-spacing: 1.5px;
-        font-size: 3.2rem;
-        text-align: center;
-        overflow: hidden; 
-        white-space: nowrap; 
-        width: 0;
-        font-weight: 100;
-        border-right: 2px solid;
-        animation: typing 4s steps(30) infinite, blink 0.75s step-end infinite; 
-        display: inline-block;
-        color: white;
-  
-  }
+    font-family: 'Retro',sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden; 
+    white-space: nowrap; 
+    font-weight: 100;
+    display: inline-block;
+    color: red;
+    }
   
   @keyframes typing {
     0% {
@@ -69,7 +65,6 @@
     line-height: 1.4;
     font-family: 'Arima', sans-serif;
     margin-bottom: 1rem;
-    color: white;
    }
  
    .modal {
@@ -124,21 +119,7 @@
     font-family: 'Arima', sans-serif;
     font-size: 1rem;
   }
-  .btn-mapa1 {
-    display: inline-block;
-    border: 1.5px solid white;
-    background-color: transparent;
-    color: white;
-    text-decoration: none;
-    padding: 8px 30px;
-    cursor: pointer;
-    border-radius: 30px;
-    font-size: 0.8rem;
-    letter-spacing: 2px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    transition: box-shadow 0.3s ease; /* Transición para animación */
-  }
+
   
   button:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Sombra un poco más fuerte en hover */

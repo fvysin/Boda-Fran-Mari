@@ -32,7 +32,7 @@ export const Regalos = () => {
         )}
       <p className='texto-regalos'>Si deseas hacernos un regalo para esta nueva película que estamos por comenzar, te dejamos nuestro IBAN para que puedas contribuir con lo que desees:
       </p>
-      <button className="btn-mapa1" onClick={openModal}>
+      <button className="btn-mapa" onClick={openModal}>
           VER DATOS
         </button>
            </div>

@@ -11,7 +11,7 @@ export const Final = () => {
     <div className={`container-final ${isVisible ? 'show' : ''}`} ref={ref}>
     <div className={`fondofinal ${isVisible ? 'animate' : ''}`}>
       {/* <h2 className="linea-sola"></h2> */}
-      <h1 className='titulo'>Corte final</h1>
+      <h1 className='titulotraslados'>the end</h1>
       {/* <h2 className="linea-sola"></h2> */}
       {/* <lord-icon
          src="https://cdn.lordicon.com/aydxrkfl.json"

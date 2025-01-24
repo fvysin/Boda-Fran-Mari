@@ -3,6 +3,15 @@
   font-family: 'Cinzel';
   src: url('../assets/fonts/cinzel/Cinzel-Regular.otf');
 }
+@font-face {
+  font-family: 'Retro';
+  src: url('../assets/fonts/riemann_theatre/RiemannTheatre.otf');
+}
+@font-face {
+  font-family: 'Cinematografica';
+  src: url('../assets/fonts/cinematografica/Cinematografica-Bold-trial.ttf');
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -23,22 +32,21 @@
        font-weight: 100;
        overflow: visible;
        text-align: center;
-
    }
    
 
    .titulo{
-      font-family: 'Cinema';
-      letter-spacing: 1.5px;
-      font-size: 3.2rem;
+      font-family: 'Retro',sans-serif;
+      font-size: 1.7rem;
+      letter-spacing: 0.1rem;
       text-align: center;
       overflow: hidden; 
       white-space: nowrap; 
-      width: 0;
       font-weight: 100;
-      border-right: 2px solid;
-      animation: typing 4s steps(30) infinite, blink 0.75s step-end infinite; 
       display: inline-block;
+      color: red;
+      margin-top: 2rem;
+
 
 }
 
@@ -75,10 +83,7 @@
       
     }
   
-.parrafo{
-      margin-bottom: 1rem;
-      
-    }
+
 span{
     font-weight: bold;
     color: #efb810;
@@ -87,25 +92,19 @@ span{
       }
 
 
-.texto-info-ceremonia{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background-size: cover;
-    background-image: url('../assets/imagenes/55.png'); 
-     
-  }
+
 .img-info{
-  transform: none;
-  background-image: url('../assets/imagenes/fondocartel.jpg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  max-height: 450px; /* Establece una altura máxima */
+  overflow: hidden; 
 }
-.img-info.zoomIn{
-  animation: zoomIn 5s ease-out forwards;
+.img-info img {
+  width: 100%;
+  height: auto; 
+  object-fit: contain; 
 }
 
 @keyframes zoomIn {
@@ -118,55 +117,6 @@ span{
     opacity: 1;  /* Se vuelve completamente visible */
 }
 }
-.container-datos{
-  margin-top: 5rem;
-}
-.h3-info{
-    font-size: 1.3rem;
-    font-family: 'Arima', sans-serif;
-    align-items: center;
-    justify-content: center;
-
-}
-.h3-info p{
-    font-family: 'Cinema'; 
-    font-size: 2.3rem;
-    letter-spacing: 0.8px;
-    margin-top:0.7rem;
-    margin-bottom: 1.3rem;
-    color: #efb810;
-    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.8)
-    /* background: linear-gradient(45deg, #d4af37, #ffd700, #b8860b);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine 3s linear infinite; */
-}
-
-@keyframes shine {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: 100%;
-  }
-}
-
-.h3-footer{
-    font-size: 1rem;
-    font-family: 'Arima', sans-serif;
-    margin-top: -1rem;
-     }
-    
-
- 
-.icono-info{
-    /* animation: bounce 1s ease infinite;  */
-    width: 20px;  
-    height: 20px; 
-    font-family: 'Arima';
-
-  }
 
 
 @keyframes bounce {

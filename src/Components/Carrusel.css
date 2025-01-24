@@ -24,10 +24,8 @@
 
 .container-carousel {
   width: 85%;
+  max-width: 1200px;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   margin-bottom: 1rem;
 }
 
@@ -42,20 +40,31 @@
   margin-top: 1rem;
 }
 .tituloca{
-  font-family: 'Cinema';
-  letter-spacing: 1.5px;
-  font-size: 3.2rem;
+  font-family: 'Retro',sans-serif;
+  font-size: 1.8rem;
   text-align: center;
   overflow: hidden; 
   white-space: nowrap; 
   color: white;
-  width: 0;
   font-weight: 100;
-  border-right: 2px solid;
-  animation: typing 4s steps(30) infinite, blink 0.75s step-end infinite; 
   display: inline-block;
   margin-top: 2rem;
   justify-content: center;
+  color: white;
+
+}
+.tituloca2{
+  font-family: 'Retro',sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  overflow: hidden; 
+  white-space: nowrap; 
+  color: white;
+  font-weight: 100;
+  display: inline-block;
+  justify-content: center;
+  color: white;
+
 }
 
 @keyframes typing {
@@ -76,12 +85,12 @@ border-color: transparent; /* Hace parpadear el cursor */
 .slider-section {
   width: 100%; 
   flex-shrink: 0;
-  height: 100%;
+  height: auto;
 }
 
 .slider-section img {
   width: 100%;
-  height: 100%;
+  height: 450px;
   object-fit: contain;
 }
 

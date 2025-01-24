@@ -1,7 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect, useRef } from 'react';
 import './CountDown.css';
-import imagen from '../assets/imagenes/fotonieve.jpg'
 import { useOnScreen } from '../Components/useOnScreen';
 
 export const CountDown = () => {
@@ -53,9 +52,9 @@ return (
     <div className={`countdown ${isVisible ? 'show' : ''}`} ref={ref}>
         {showCountdown && (
     <div className="countdown-card">
-        <div className="img-container-info">
+        {/* <div className="img-container-info">
            <img className="img-nieve" src={imagen} alt="imagen-boda" />
-        </div>
+        </div> */}
 
       {/* Contenido */}
       <div className="countdown-letra">

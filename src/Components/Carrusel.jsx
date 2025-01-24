@@ -1,11 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect, useRef } from 'react';
 import { useOnScreen } from '../Components/useOnScreen';
-import imagen1 from '../assets/imagenes/carruselpareja.png';
-import imagen2 from '../assets/imagenes/carruselstar.png';
-import imagen3 from '../assets/imagenes/carruselvida.png';
+import imagen1 from '../assets/imagenes/carrusel01.png';
+import imagen2 from '../assets/imagenes/carrusel02.png';
+import imagen3 from '../assets/imagenes/carrusel03.png';
 import './Carrusel.css';
-import { Regalos } from './Regalos';
 
 export const Carrusel = () => {
   const ref = useRef();
@@ -23,21 +22,23 @@ export const Carrusel = () => {
   return (
     <div className={`tira-fotografica ${isVisible ? 'show' : ''}`} ref={ref}>
       <div className="container-carousel">
-        <p className="tituloca">De los creadores de...</p>
+        <p className="tituloca">De los creadores de</p>
         <div className="carruseles">
           {images.map((image, index) => (
             <div
-              key={index}
-              className={`slider-section ${
-                index === currentSlide ? 'active' : ''
-              }`}
+            key={index}
+            className={`slider-section ${
+              index === currentSlide ? 'active' : ''
+            }`}
             >
               <img src={image} alt={`Slide ${index + 1}`} />
+              <p className="tituloca">Llega</p>
+              <p className="tituloca2">Una boda que recordarás <br /> toda tu vida</p>
             </div>
           ))}
         </div>
       </div>
-      <Regalos/>
+ 
     </div>
   );
 };

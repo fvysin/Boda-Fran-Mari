@@ -19,47 +19,28 @@
    }
    
 .portada-container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-family: 'Geist';
-    overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
       }
- .portada-fondo-img {
-    width: 100%;
-    height: auto; 
-    object-fit: contain;
-    display: block;
-    }
+.portada-video {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: auto; /* Ajusta la altura manteniendo la proporción del video */
+  display: block;
+      }
 
 .portada-contenido {
   display: flex;
-  flex-direction: column;
-  align-items:flex-start;
   justify-content: center;
-  width: 100%; 
-  position: relative;
-}
-
-.portada-img {
-  width: 100%;
-  height: auto; 
-  object-fit: contain; 
-  display: block;
+  overflow: hidden;
+  align-items: center;
 }
 
 
-.portada-texto{
-    font-family: 'Voga'; 
-    font-size: 2rem;
-    position: absolute; 
-    top: 45%;
-    left: 40%; 
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
+
+
   @keyframes shine {
     0% {
       background-position: 0%;
@@ -70,40 +51,4 @@
   }
 
 
-
-.portada-fecha {
-  display: flex;
-  font-size: 1.3rem;
-  font-weight: 500;
-  align-items: center;
-  position: absolute;
-  top: 65%; 
-  left:5%;
-
-}
-.portada-fecha::before,
-.portada-fecha::after 
-{
-    content: '';
-    width: 3rem; 
-    display: inline-block;
-    height: 2px;
-    border-top: 0.5px solid rgb(0, 0, 0);
-    margin:0 1rem;
-}
-
-
-.portada-accion{
-  margin-top: 1rem;
-  font-weight: 200; 
-  font-size: 1.3rem;
-}
-
-/* .linea-sola{
-  content: '';
-  width: 20rem;
-  display: inline-block;
-  height: 2px;
-  border-top: 0.5px solid rgb(0, 0, 0);
-} */
 

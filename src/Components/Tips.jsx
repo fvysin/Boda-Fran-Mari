@@ -8,7 +8,7 @@ export const Tips = () => {
   const isVisible = useOnScreen(ref);
   return (
     <div className={`container-tips ${isVisible ? 'show' : ''}`} ref={ref}>
-         <h1 className='titulo'>Fiesta</h1>
+         <h1 className='titulotraslados'>Fiesta</h1>
          {/* <lord-icon
            src="https://cdn.lordicon.com/ohcuigqh.json"
            trigger="loop"
