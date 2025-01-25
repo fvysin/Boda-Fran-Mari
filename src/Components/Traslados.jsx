@@ -15,7 +15,7 @@ export const Traslados = () => {
 
           <div>
           <p className='direccion-ceremonia'>Lugar y hora:</p>
-          <p > Colegio San Cayetano a las 12:30hs</p>
+          <p >Cerca del Colegio San Cayetano, <br />a las 12:30hs</p>
           <p>Vuelta a las 23:00h</p>
           <p className='direccion-ceremonia'>Contacto día del evento:</p>
       <p className='texto-direccion-ceremonia'>
@@ -27,7 +27,7 @@ export const Traslados = () => {
       <div className="map-container">
           <div className="button-container">
           <a
-            href="https://maps.app.goo.gl/ySuz1ziktbJHv4P17"
+            href="https://maps.app.goo.gl/yUbQngr2QGtNiWJHA"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-mapa"

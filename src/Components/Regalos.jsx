@@ -23,10 +23,10 @@ export const Regalos = () => {
               </span>
               <div className='caja-fran'>
               <p><span className='hola'>IBAN Fran: </span>ES1234567890123456789012</p>
-              <p><span className='hola'>Bizum Fran:</span> 600123456</p>
+              <p><span className='hola'>Bizum Fran:</span> 662453422</p>
               </div>
               <p><span className='hola'>IBAN Mari: </span> ES1234567890123456789012</p>
-              <p><span className='hola'>Bizum Mari: </span> 600123456</p>
+              <p><span className='hola'>Bizum Mari: </span> 654403945</p>
             </div>
           </div>
         )}

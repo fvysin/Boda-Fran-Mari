@@ -24,37 +24,7 @@ export const Info = () => {
             <img src={accion} alt="" />
           </div>
       
-          {/* <div className={`img-info ${isVisible ? 'zoomIn' : ''}`}>
-          <div className='container-datos'>
-       <div className='h3-info'>
-        <p className="icono-info"  alt="" /> Película: 
-        <p>
-        Maria & Francisco Wedding
-        </p>
-       </div>
-
-        <div className='h3-info'>
-          <p className="icono-info" alt="" /> Fecha y hora: 
-        <p>
-          Sabado 10 de mayo, <br /> 13:00hs. 
-        </p>
-        </div>
-
-        <div className='h3-info'> 
-        <p className="icono-info" alt="" /> El escenario: 
-        <p>
-        Hotel rural S ' Olivaret
-        </p>
-        </div>
-        <p className='h3-footer'>¡Nos encantaría que formaras <br />parte de esta historia!</p>
-      
-          </div>
-      </div>
-
-        */}
-  
-       
-       
+            
     
         
     </div>

@@ -3,6 +3,8 @@ import React, { useRef } from 'react';
 import { useOnScreen } from '../Components/useOnScreen';
 import './Tips.css'
 import dresscode from '../assets/imagenes/Dresscode02.jpg'
+import imgweb from '../assets/imagenes/dresscodeweb.jpg';
+
 
 export const Tips = () => {
   const ref = useRef();
@@ -15,8 +17,11 @@ export const Tips = () => {
          <p>Para estas esceneas necesitaremos un <br /><span className='drescode-span'>Dress code formal</span></p>
         </div>
         <div className='dresscode'>
-           <img src={dresscode} alt="dresscode" />
-        </div>
+        <picture>
+          <source srcSet={imgweb} media="(min-width: 800px)" />
+          <img src={dresscode} alt="Dress code" />
+        </picture>
+      </div>
         <div className='texto-tips'>
             <p>Para más tarde estaremos en la tramunatana si eres friolero recomendamos un abrigo</p>
             <p>Para las escenas de baile te recomendamos tus zapatos más cómodos</p>

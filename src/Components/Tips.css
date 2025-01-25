@@ -40,18 +40,30 @@
     padding: 10px;
   }
 
-      @media (min-width: 768px) {
-        .dresscode img {
-            width: 70%;
-            max-width: 700px;  /* Asegura que la imagen no se agrande más allá de 700px */
+@media (min-width: 768px) {
+      .dresscode img {
+        width:100%; 
         height: auto;
+        object-fit: cover; 
+        max-width: none;
         }
     }
     
-    @media (min-width: 1024px) {
-        .dresscode img {
-            width: 60%; /* Ajusta el tamaño de la imagen aún más en pantallas grandes */
-            height: auto;
-            max-width: 600px; 
-          }
+
+@media (min-width: 1024px) {
+  .dresscode img {
+     width:100%; 
+     height: auto;
+     object-fit: cover; 
+     max-width: none;
+ }
+  }
+
+  @media (min-width: 1300px) {
+    .dresscode img {
+        width: 100%; /* Asegura que ocupe todo el ancho */
+        height: auto;
+        object-fit: cover; /* Mantiene la proporción sin deformar */
+        object-position: center; /* Centra el contenido visible */
     }
+}
