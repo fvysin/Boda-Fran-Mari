@@ -5,21 +5,7 @@
    }
    /* 9fddea */
    /* 235, 243, 250 */
-  /* .container-regalos{
-       width: 100%;
-       height: auto;
-       display: flex;
-       flex-direction: column;
-       font-family: 'Arima', sans-serif;
-       font-weight: 100;
-       overflow: hidden;
-       text-align: center;
-       padding: 20px;
-       align-items: center;
-       justify-content: center;
-       border: #000 1px solid;
-       border-radius: 50%;
-   } */
+
    .container-regalos {
     width: 100%;
     padding: 40px 20px;
