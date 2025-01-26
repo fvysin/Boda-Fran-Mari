@@ -15,14 +15,14 @@ export const Traslados = () => {
 
           <div>
           <p className='direccion-ceremonia'>Lugar y hora:</p>
-          <p >Cerca del Colegio San Cayetano, <br />a las 12:30hs</p>
+          <p >Frente al Colegio San Cayetano, <br />a las 12:30hs</p>
           <p>Vuelta a las 23:00h</p>
           <p className='direccion-ceremonia'>Contacto día del evento:</p>
       <p className='texto-direccion-ceremonia'>
       Facundo +34 691740746.</p>
           <p className='direccion-ceremonia'>Dirección:</p>
           <p className='texto-direccion-ceremonia'>
-      Avenida Picasso 15. <br />En frente del Viding Aigua Blava.</p>
+      Avenida Picasso, 42. <br />(Viding Aigua Blava.)</p>
           </div>
       <div className="map-container">
           <div className="button-container">
@@ -39,7 +39,7 @@ export const Traslados = () => {
         
       </div>
       <p className='por-favor'>
-      Por favor, confirmar asistencia de los buses antes del 1 de abril a Mari </p>
+      Por favor, confirmar asistencia de los buses antes del 20 de abril a Mari </p>
             </div> 
         </div>
       </div>

@@ -23,7 +23,7 @@ export const Final = () => {
        </lord-icon> */}
       <div className="fondotraslad">
         <p className='parrafo-final'>
-        La película de nuestra vida está por comenzar, y tu presencia es el toque especial que hará este día aún más memorable. Por favor, confirma tu asistencia antes del <span>1 de abril</span>, para que podamos asegurarnos de que todos los detalles estén listos para esta gran función. <br />Si tienes alergias alimentarias, eres vegetariano, o hay algo importante que los novios deben saber, no dudes en informarnos.
+        La película de nuestra vida está por comenzar, y contamos con tu presencia. Por favor, confirma tu asistencia antes del <span>1 de abril</span><br />Si tienes alergias alimentarias, eres vegetariano, o hay algo importante que los novios deben saber, no dudes en informarnos.
         </p>
       
         <div className="container-novios">
@@ -50,9 +50,8 @@ export const Final = () => {
 </div>
       </div>
   
-        <p className='nopodemos'>¡No podemos esperar para verte en la gran pantalla de este día tan especial!
-        <br /><br />
-          Con todo nuestro cariño,</p>
+        <p className='nopodemos'>¡Contamos con vosotros para este día tan especial!
+       </p>
   
       </div>
       <p className='mari-fran'>Mari <span className='span-and'>&</span> Fran</p>

@@ -17,7 +17,7 @@ export const Info = () => {
           {/* <h2 className="linea-sola"></h2> */}
         <div className='texto-info'>
           <p className='queridos-info'>Queridos amigos y familia:</p>
-           <p className='parrafo'>Nos gustaría invitarte a ser parte de una historia única, como las que solo el cine sabe contar. Este <span>10-05-2025</span>, serás testigo y protagonista en esta película, donde dos personajes se unen para comenzar su propia aventura, con una boda que será un verdadero evento cinematográfico de risas y diversión.</p>
+           <p className='parrafo'>Nos gustaría invitaros a ser parte de una historia única, Este <span>10-05-2025</span>, serás testigo y protagonista en esta película, donde dos personajes se unen para comenzar su propia aventura, con una boda que será un verdadero evento cinematográfico de risas y diversión.</p>
         </div>
         </div>
         <div className='img-info'>

@@ -11,7 +11,7 @@ export const Regalos = () => {
   const closeModal = () => setIsModalOpen(false);
   return (
     <div className={`container-regalos ${isVisible ? 'show' : ''}`} ref={ref}>
-       <h1 className='tituloregalos'>Regalos</h1>
+       <h1 className='tituloregalos'>El mejor regalo</h1>
       <div className='texto-regalos-container'>
 
         {/* Modal */}
@@ -30,7 +30,7 @@ export const Regalos = () => {
             </div>
           </div>
         )}
-      <p className='texto-regalos'>Si deseas hacernos un regalo para esta nueva película que estamos por comenzar, te dejamos nuestro IBAN para que puedas contribuir con lo que desees:
+      <p className='texto-regalos'>es vuestra presencia, no podéis faltar. Pero si queréis ayudarnos, con nuestro viaje, dejamos nuestros datos
       </p>
       <button className="btn-mapa" onClick={openModal}>
           VER DATOS
