@@ -9,7 +9,7 @@ export const Traslados = () => {
   return (
     <div className={`container-traslados ${isVisible ? 'show' : ''}`} ref={ref}>
       <div className={`fondotraslados ${isVisible ? 'animate' : ''}`}>
-       <p className='titulotraslados'>Traslados</p>
+       <p className='titulotraslados'>TRASLADOS</p>
         <div className='div-traslados'>
           <p className='lugar-hora-traslados'>Buses para traslados de invitados, protagonistas y staff</p>
 

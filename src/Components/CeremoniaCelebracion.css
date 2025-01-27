@@ -105,7 +105,7 @@
   letter-spacing: 0.15rem;
     }
 .tilde-oo{
-  font-family: 'Arima';
+  font-family: 'Arima', sans-serif;
   color: red;
   font-size: 1.4rem;    
 }

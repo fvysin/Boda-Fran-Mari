@@ -144,7 +144,7 @@ span{
 }
 
 .tilde-o{
-  font-family: 'Arima';
+  font-family: 'Arima', sans-serif;
   color: red;
   font-size: 1.8rem;    
   font-weight: bold;  

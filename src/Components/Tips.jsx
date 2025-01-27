@@ -11,7 +11,7 @@ export const Tips = () => {
   const isVisible = useOnScreen(ref);
   return (
     <div className={`container-tips ${isVisible ? 'show' : ''}`} ref={ref}>
-         <h1 className='titulotraslados'>Fiesta</h1>
+         <h1 className='titulotraslados'>FIESTA</h1>
         <div className='texto-tips'>
          <p>Para estas escenas:<br /><span className='drescode-span'>Dress code formal</span></p>
         </div>

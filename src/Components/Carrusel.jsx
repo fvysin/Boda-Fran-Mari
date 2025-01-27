@@ -22,7 +22,7 @@ export const Carrusel = () => {
   return (
     <div className={`tira-fotografica ${isVisible ? 'show' : ''}`} ref={ref}>
       <div className="container-carousel">
-        <p className="tituloca">De los creadores de</p>
+        <p className="tituloca">DE LOS CREADORES DE</p>
         <div className="carruseles">
           {images.map((image, index) => (
             <div

@@ -12,7 +12,7 @@ export const Info = () => {
     <div className={`container-info ${isVisible ? 'show' : ''}`} ref={ref}>
       <div className='texto'>
         {/* <h2 className="linea-sola"></h2> */}
-        <h2 className='titulo'>¡Una boda de pel<span className='tilde-o'>Í</span>cula!</h2>
+        <h2 className='titulo'>¡UNA BODA DE PEL<span className='tilde-o'>Í</span>CULA!</h2>
         <br />
           {/* <h2 className="linea-sola"></h2> */}
         <div className='texto-info'>
