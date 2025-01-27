@@ -160,8 +160,6 @@ span{
     opacity: 1;  /* Se vuelve completamente visible */
 }
 }
-
-
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0); 
@@ -176,13 +174,13 @@ span{
         width: 70%;
        margin-left: 4rem;
        
-  }  }
-  @media (min-width: 700px) {
+}  }
+@media (min-width: 700px) {
     .img-info{
          width: 60%;
          margin-left: 7rem;
     }}
-    @media (min-width: 800px) {
+@media (min-width: 800px) {
       .img-info{
            width: 50%;
            margin-left: 15rem;
@@ -196,7 +194,7 @@ span{
   margin-left: 20rem;
 }}
 
-    @media (min-width: 1250px) {
+@media (min-width: 1250px) {
       .img-info{
         width: 30%;
         margin-left: 40rem;
