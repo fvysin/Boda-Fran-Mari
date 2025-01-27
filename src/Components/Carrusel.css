@@ -113,19 +113,3 @@ width: 100%;
 border-color: transparent; /* Hace parpadear el cursor */
 }
 }
-@font-face {
-  font-family: Cinema;
-  src: url('../assets/fonts/clouts/Clouts!.ttf');
-}
-@font-face {
-  font-family: 'Today';
-  src: url('../assets/fonts/today_show/');
-}
-@font-face {
-  font-family: 'Film';
-  src: url('../assets/fonts/film_letters/FilmLetters.ttf');
-}
-@font-face {
-  font-family: 'Starla';
-  src: url('../assets/fonts/starla/Starla.ttf');
-}

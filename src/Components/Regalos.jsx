@@ -30,7 +30,7 @@ export const Regalos = () => {
             </div>
           </div>
         )}
-      <p className='texto-regalos'>es vuestra presencia, no podéis faltar. Pero si queréis ayudarnos, con nuestro viaje, dejamos nuestros datos
+      <p className='texto-regalos'>es vuestra presencia, no podéis faltar. Pero si queréis ayudarnos con nuestro viaje, dejamos nuestros datos
       </p>
       <button className="btn-mapa" onClick={openModal}>
           VER DATOS

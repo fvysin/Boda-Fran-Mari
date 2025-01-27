@@ -45,11 +45,19 @@
     }
 
     .lugar-hora-traslados{
-      margin-top: 1.5rem;
+      margin-top: 0.5rem;
       font-family: 'Geist';
       color: black;
       font-weight: 300;
-     
+       
+    }
+    .div-traslados{
+      padding: 10px;
+    }
+    .letra-tilde{
+      font-family: 'Voga';
+      font-style: italic;
+      color: white;
     }
 
     .por-favor{

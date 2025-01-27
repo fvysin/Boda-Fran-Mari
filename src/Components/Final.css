@@ -90,8 +90,8 @@
     
 .nopodemos-container {
     width: 100vw; 
-    margin: 0; /* Elimina márgenes */
-    padding: 0; /* Elimina paddings */
+    margin: 0; 
+    padding: 0; 
 }
 .mari-fran{
     /* font-family: 'Starla'; */

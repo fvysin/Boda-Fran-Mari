@@ -32,7 +32,7 @@ export const Traslados = () => {
             rel="noopener noreferrer"
             className="btn-mapa"
             >
-            VER DIRECCION
+            VER DIRECCI<span className='letra-tilde'>ó</span>N
           </a>
         </div>
 

@@ -52,11 +52,6 @@ return (
     <div className={`countdown ${isVisible ? 'show' : ''}`} ref={ref}>
         {showCountdown && (
     <div className="countdown-card">
-        {/* <div className="img-container-info">
-           <img className="img-nieve" src={imagen} alt="imagen-boda" />
-        </div> */}
-
-      {/* Contenido */}
       <div className="countdown-letra">
         <h2 className="titulo">Faltan</h2>
         <div className="countdown-cd">

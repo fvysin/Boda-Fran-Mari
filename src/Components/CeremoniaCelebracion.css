@@ -1,11 +1,9 @@
-@font-face {
-  font-family: 'Hollywood';
-  src: url('../assets/fonts/hollywood_hills/HollywoodHills.ttf');
-}
-@font-face {
-  font-family: 'Cowboy';
-  src: url('../assets/fonts/CowboyMovie.ttf');
-}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ }
 
 .container-ceremonia{
     width: 100%;
@@ -96,4 +94,18 @@
   }
 .mapa-traslados{
   margin-top: 1rem;
+}
+
+
+.boda-pelicula{
+  font-weight: bold;
+  color: #efb810;
+  font-size: 2rem;
+  font-family:'Cinema';
+  letter-spacing: 0.15rem;
+    }
+.tilde-oo{
+  font-family: 'Arima';
+  color: red;
+  font-size: 1.4rem;    
 }
