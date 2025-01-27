@@ -101,11 +101,7 @@ export const Final = () => {
                 <label>Nombre(s):</label>
                 <input type="text" name="name" required />
               </div>
-              <div>
-                <label>Cantidad de personas:</label>
-                <input type="number" name="people" required />
-              </div>
-              <div>
+                  <div>
                 <label>Alergias (si las hay):</label>
                 <textarea name="allergies"></textarea>
               </div>
