@@ -16,7 +16,7 @@ export const Regalos = () => {
 
         {/* Modal */}
         {isModalOpen && (
-          <div className="modal">
+          <div className="modal-overlay">
             <div className="modal-content">
               <span className="close" onClick={closeModal}>
                 &times;
