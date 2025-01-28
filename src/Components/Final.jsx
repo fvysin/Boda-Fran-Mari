@@ -53,7 +53,7 @@ export const Final = () => {
       <h1 className='titulotraslados'>the end</h1>
       <div className="fondotraslad">
         <p className='parrafo-final'>
-        La película de nuestra vida está por comenzar, y contamos con tu presencia. Por favor, confirma tu asistencia antes del <br /><span>1 de abril</span><br />Si tienes alergias alimentarias, eres vegetariano, o hay algo importante que los novios deben saber, no dudes en informarnos.
+        La película de nuestra vida está por comenzar, y contamos con tu presencia. Por favor, confirma tu asistencia antes del <br /><span>14 de abril</span><br />Si tienes alergias alimentarias, eres vegetariano, o hay algo importante que los novios deben saber, no dudes en informarnos.
         </p>
       
         {/* <div className="container-novios">
