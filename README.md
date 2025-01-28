@@ -4,18 +4,6 @@
   Bienvenidos a la <strong>Invitación!</strong> - una app creada a medida con temática de cine, totalmente dinámica e interactiva.
 </p>
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Contenido ↴</summary>
-  <ul>
-    
-    <li><a href="#features">Características</a></li>
-    <li><a href="#built-with">Built with</a></li>
-    <li><a href="#links">Links/a></li>
-    <li><a href="#contact">Contacto</a></li>
-  </ul>
-</details>
-
 <!-- ABOUT THE PROJECT -->
 <br />
 
@@ -24,6 +12,8 @@
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
 <p align="right">(<a href="#readme-top"> △ </a>)</p>
+<img src="images/1.png" alt="Vista web">
+<img src="images/2.png" alt="Vista web">
 
 <div id="built-with">
   <p align="right">(<a href="#readme-top"> △ </a>)</p>
