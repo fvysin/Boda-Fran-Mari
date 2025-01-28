@@ -12,7 +12,7 @@
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
 <p align="right">(<a href="#readme-top"> △ </a>)</p>
-<img src="images/1.png" alt="Vista web">
+<img src="images/1.png" alt="Vista web"> 
 <img src="images/2.png" alt="Vista web">
 
 <div id="built-with">
