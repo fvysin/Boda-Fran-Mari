@@ -3,7 +3,7 @@ import React, { useRef } from 'react';
 import { useOnScreen } from '../Components/useOnScreen';
 import './Tips.css'
 import dresscode from '../assets/imagenes/portadas.jpg'
-import imgweb from '../assets/imagenes/dresscodeweb.jpg';
+import imgweb from '../assets/imagenes/dressscode-web.jpg';
 
 
 export const Tips = () => {

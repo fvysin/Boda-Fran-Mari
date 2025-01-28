@@ -23,21 +23,24 @@ export const Carrusel = () => {
     <div className={`tira-fotografica ${isVisible ? 'show' : ''}`} ref={ref}>
       <div className="container-carousel">
         <p className="tituloca">DE LOS CREADORES DE</p>
-        <div className="carruseles">
+     
+          <div className="carruseles">
           {images.map((image, index) => (
-            <div
-            key={index}
-            className={`slider-section ${
-              index === currentSlide ? 'active' : ''
-            }`}
+              <div
+              key={index}
+              className={`slider-section ${index === currentSlide ? 'active' : ''}`}
             >
               <img src={image} alt={`Slide ${index + 1}`} />
-              <p className="tituloca">Llega...</p>
-              <p><span className='boda-pelicula'>¡Una boda de pelicula!</span></p>
+              {index === currentSlide && (
+                <>
+                </>
+              )}
             </div>
           ))}
         </div>
-      </div>
+          <p className="tituloca">Llega...</p>
+          <p><span className='boda-pelicula'>¡Una boda de pelicula!</span></p>
+        </div>
  
     </div>
   );

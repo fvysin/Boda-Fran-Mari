@@ -21,7 +21,9 @@
   background-position:center;
 
 }
-
+.fondo-grande {
+  display: none; /* Oculta por defecto */
+}
 .container-carousel {
   width: 85%;
   height: 100%;
@@ -112,4 +114,28 @@ width: 100%;
 50% {
 border-color: transparent; /* Hace parpadear el cursor */
 }
+}
+
+@media (min-width: 800px) {
+  .carruseles {
+    display: flex; /* Coloca los elementos en fila */
+    justify-content: space-between; /* Espaciado uniforme */
+    gap: 1rem; /* Espacio entre imágenes */
+  }
+
+  .slider-section {
+    display: block; /* Muestra todas las imágenes */
+    width: calc(100% / 3); /* Cada imagen ocupa un tercio del ancho */
+    height: auto;
+  }
+
+  .slider-section:not(.active) {
+    display: block; /* No oculta ninguna imagen en pantallas grandes */
+  }
+
+  .slider-section img {
+    width: 80%;
+    height: 550px;
+    object-fit: contain; 
+  }
 }
