@@ -121,6 +121,7 @@ export const Final = () => {
           </div>
           <p className='mari-fran'>Mari <span className='span-and'>&</span> Fran</p>
           {/* <p className='anillo'>🎬 💍</p> */}
+          <p className='diseñado'>Diseñado por Florencia Vysin</p>
     </div>
     
   )

@@ -194,3 +194,12 @@
     border: 1px solid black;
     border-radius: 5px;
   }
+
+  .diseñado{
+      font-size: 0.6rem;
+      line-height: 1.4;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      color: rgb(128, 128, 126);
+    }
+  
